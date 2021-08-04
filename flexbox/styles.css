@@ -20,7 +20,7 @@ align-items ----> cross axis(세로) item의 위치
 }
 
 .child {
-    width: 200px;
+    flex-basis: 200px;
     height: 200px;
     background: peru;
     color: white;
@@ -58,3 +58,8 @@ align-items ----> cross axis(세로) item의 위치
     flex-grow: 1;
 }
 */
+
+.child:nth-child(2) {
+    background-color: black;
+    flex-grow: 1;
+}
