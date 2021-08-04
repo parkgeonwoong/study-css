@@ -12,11 +12,11 @@ align-items ----> cross axis(세로) item의 위치
     display: flex;
     /* Main Axis */
     justify-content: center;
-    flex-direction: column-reverse;
+    height: 100vh;
+    /* flex-direction: column-reverse; */
     /* Cross Axis */
     /* align-items: center; */
-    height: 100vh;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 .child {
@@ -45,3 +45,16 @@ align-items ----> cross axis(세로) item의 위치
      기본적으로 order: 0이다.
     order: 1;
 } */
+
+/* flex-shrink --> 공간이 줄어들때 비율만큼 더 줄어든다. 
+.child:nth-child(2) {
+    background-color: black;
+    flex-shrink: 5;
+} */
+
+/* flex-grow ---> 여분의 공간이 있을 떄 비율만큼 더 늘어난다.  
+.child:nth-child(2) { 
+    background-color: black;
+    flex-grow: 1;
+}
+*/
