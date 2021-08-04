@@ -12,9 +12,11 @@ align-items ----> cross axis(세로) item의 위치
     display: flex;
     /* Main Axis */
     justify-content: center;
+    flex-direction: column-reverse;
     /* Cross Axis */
     /* align-items: center; */
     height: 100vh;
+    flex-wrap: wrap;
 }
 
 .child {
@@ -23,6 +25,9 @@ align-items ----> cross axis(세로) item의 위치
     background: peru;
     color: white;
     font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* align-self
@@ -36,7 +41,7 @@ align-items ----> cross axis(세로) item의 위치
 }
 */
 
-.child:nth-child(2) {
-    /* 기본적으로 order: 0이다.  */
+/* .child:nth-child(2) {
+     기본적으로 order: 0이다.
     order: 1;
-}
+} */
