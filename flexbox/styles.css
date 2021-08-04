@@ -1,6 +1,42 @@
-.box {
-    background: skyblue;
-    width: 100px;
-    height: 100px;
-    display: inline-block;
+/* 
+flexBox 규칙
+기억하자
+1. 항상 붙어있는 부모가 자식의 위치를 움직일 수 있다.
+
+flex-direction default row: 가로
+justify-content ---> main axis(가로) item을 위치
+align-items ----> cross axis(세로) item의 위치
+*/
+
+.father {
+    display: flex;
+    /* Main Axis */
+    justify-content: center;
+    /* Cross Axis */
+    /* align-items: center; */
+    height: 100vh;
+}
+
+.child {
+    width: 200px;
+    height: 200px;
+    background: peru;
+    color: white;
+    font-size: 50px;
+}
+
+/* align-self
+.child:nth-child(2) {
+     default --> column 
+    align-self: center;
+}
+
+.child:nth-child(3) {
+    align-self: flex-end;
+}
+*/
+
+.child:nth-child(2) {
+    /* 기본적으로 order: 0이다.  */
+    order: 1;
 }
