@@ -1,3 +1,4 @@
+/*
 .father {
     display: grid;
     grid-template-columns: 250px 250px 250px;
@@ -5,7 +6,7 @@
     /* 
     column-gap: 10px;
     row-gap: 10px; 
-    */
+    
     gap: 10px;
 }
 
@@ -17,4 +18,39 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+*/
+
+.grid {
+    display: grid;
+    grid-template-columns: auto 200px;
+    /* auto= 모든 공간을 사용한다. */
+    grid-template-rows: 100px repeat(2, 200px) 100px;
+    grid-template-areas:
+        "header header header header"
+        "content content content nav"
+        "content content content nav"
+        "footer footer footer footer"
+    ;
+}
+
+.header {
+    background-color: #2ecc71;
+    grid-area: header;
+}
+
+.content {
+    background-color: skyblue;
+    grid-area: content;
+}
+
+.nav {
+    background-color: purple;
+    grid-area: nav;
+}
+
+.footer {
+    background-color: rgb(230, 129, 92);
+    grid-area: footer;
 }
