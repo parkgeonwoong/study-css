@@ -198,16 +198,18 @@
 
 /* Auto grid
 column, row가 넘쳐나서 그리드 범주를 벗어나면 일일이 하는것은 나쁜 판단
+
+- minmax : 얼마나 작게 혹은 크게 element가 될 수 있는가 
 */
 .grid {
     background-color: gray;
     color: white;
     display: grid;
     gap: 5px;
-    grid-template-columns: repeat(4, 100px);
+    grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(4, 100px);
     /* grid-auto-rows: 100px; */
-    grid-auto-flow: column;
+    /* grid-auto-flow: column; */
     grid-auto-columns: 100px;
 }
 
