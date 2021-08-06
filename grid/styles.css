@@ -127,6 +127,7 @@
 ------------------------------------------------------
 */
 
+/* 
 .grid {
     display: grid;
     gap: 10px;
@@ -139,7 +140,7 @@
     align-items: center;
     기본적으로 stretch형태로 모두 옆으로 위로 늘어난다. 
     justify-items, align-items로 바꿀 수 있다.
-    */
+    
 }
 
 .header {
@@ -156,4 +157,64 @@
 
 .footer {
     background-color: rgb(230, 129, 92);
+}
+------------------------------------------------------
+*/
+
+/* Place Content
+.grid {
+    background-color: gray;
+    display: grid;
+    gap: 10px;
+    height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 100px);
+    /* justify-content: center;
+    align-content: space-between; 
+    place-content: end center;
+
+}
+
+.header {
+    background-color: #2ecc71;
+    /* align-self: end;
+    justify-self: center;
+    place-self: start end;
+}
+
+.content {
+    background-color: skyblue;
+}
+
+.nav {
+    background-color: purple;
+}
+
+.footer {
+    background-color: rgb(230, 129, 92);
+}
+------------------------------------------------------
+*/
+
+/* Auto grid
+column, row가 넘쳐나서 그리드 범주를 벗어나면 일일이 하는것은 나쁜 판단
+*/
+.grid {
+    background-color: gray;
+    color: white;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 100px);
+    /* grid-auto-rows: 100px; */
+    grid-auto-flow: column;
+    grid-auto-columns: 100px;
+}
+
+.item:nth-child(even) {
+    background-color: lightpink;
+}
+
+.item:nth-child(odd) {
+    background-color: skyblue;
 }
