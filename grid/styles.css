@@ -220,9 +220,10 @@ column, row가 넘쳐나서 그리드 범주를 벗어나면 일일이 하는것
 .item:nth-child(odd) {
     background-color: skyblue;
 }
-
+------------------------------------------------------
 */
 
+/* Auto Fit&Fill
 .grid {
     background-color: gray;
     color: white;
@@ -250,4 +251,25 @@ column, row가 넘쳐나서 그리드 범주를 벗어나면 일일이 하는것
 .grid:last-child {
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 
+} 
+*/
+
+
+/* Mincontent&Maxcontent */
+.grid {
+    background-color: gray;
+    color: white;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: max-content min-content;
+    grid-auto-rows: 100px;
+    margin-bottom: 30px;
+}
+
+.item:nth-child(even) {
+    background-color: lightpink;
+}
+
+.item:nth-child(odd) {
+    background-color: skyblue;
 }
