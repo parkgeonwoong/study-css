@@ -1,0 +1,14 @@
+// Mixin
+// 어떤 종류의 argument를 mixin에다가 보내야 할 때 css의 결과값을 바꿈
+@mixin link($word) {
+    text-decoration: none;
+    display: block;
+
+    @if $word=='odd' {
+        color: skyblue;
+    }
+
+    @else {
+        color: tomato;
+    }
+}

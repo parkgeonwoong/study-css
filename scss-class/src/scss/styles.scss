@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=B612+Mono&family=DM+Serif+Display:ital@0;1&display=swap");
+@import "_variables";
+@import "_elements";
+@import "_mixins.scss";
+
+
+// Nesting
+/*
+h2 {
+  color: $bg;
+  font-size: 30px;
+}
+
+.box {
+  margin-top: 20px;
+
+  &:hover {
+    background-color: coral;
+  }
+
+  h2 {
+    color: skyblue;
+
+    &:hover {
+      color: palevioletred;
+    }
+  }
+
+  button {
+    color: mediumslateblue;
+  }
+}
+*/
+
+a {
+  margin-bottom: 15px;
+
+  &:nth-child(odd) {
+    @include link("odd");
+  }
+
+  &:nth-child(even) {
+    @include link("even");
+  }
+}
