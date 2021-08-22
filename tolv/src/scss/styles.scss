@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yrsa:wght@400;500;600&display=swap');
 @import "_variables";
 
 * {
@@ -6,5 +7,125 @@
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', 'Yrsa', serif, sans-serif;
+    margin-top: 50px;
+}
+
+header {
+    // z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    width: 100%;
+    padding: 0px 7%;
+
+    h1 {
+        place-self: center center;
+        font-family: 'Yrsa';
+    }
+
+    >span {
+        justify-self: end;
+    }
+
+    nav {
+        cursor: pointer;
+
+        ul {
+            display: flex;
+            font-family: 'Montserrat';
+            font-weight: 500;
+
+            li {
+                padding: 0 20px;
+                font-size: 20px;
+            }
+
+            li:not(:last-child) {
+                margin-right: 10px;
+            }
+        }
+    }
+
+    .logo {
+        font-size: 48px;
+        font-family: 'Montserrat';
+        font-weight: 600;
+        display: flex;
+
+        div {
+            transform: rotateZ(10deg);
+            // margin: 0px -3px;
+        }
+    }
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: calc(100vh - 60px);
+
+    .hero__img {
+        background-image: url("https://tolv.dk/wp-content/uploads/2020/11/home_kitsune-2-1040x1300.jpg");
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .hero__text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        h2 {
+            font-size: 42px;
+            text-align: center;
+            width: 60%;
+            font-weight: 500;
+            margin-bottom: 40px;
+            font-family: 'Yrsa';
+        }
+
+        span {
+            font-size: 12px;
+        }
+    }
+}
+
+a {
+    font-weight: 600;
+    color: $ac;
+}
+
+.banner {
+    background-color: $bg;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h3 {
+        font-family: 'Yrsa';
+        font-size: 60px;
+        margin-bottom: 30px;
+        font-weight: 600;
+    }
+
+    p {
+        width: 50%;
+        text-align: center;
+        font-family: 'Yrsa';
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+
+    span {
+        font-size: 12px;
+    }
+
 }
