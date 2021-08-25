@@ -7,4 +7,70 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
+    margin-top: 40px;
+}
+
+.header {
+    width: 100%;
+    background-color: white;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 0 10px;
+
+    h1 {
+        font-size: 22px;
+        text-transform: uppercase;
+    }
+
+    nav {
+        ul {
+            display: flex;
+
+            li {
+                font-size: 20px;
+                display: flex;
+                align-items: center;
+
+                &:nth-child(3n + 1) {
+                    span {
+                        background-color: #e4c464;
+                    }
+                }
+                &:nth-child(3n + 2) {
+                    span {
+                        background-color: #AAC6B9;
+                    }
+                }
+                &:nth-child(3n + 3) {
+                    span {
+                        background-color: #AEAA76;
+                    }
+                }
+
+                span {
+                    // margin-right: 5px;
+                    height: 15px;
+                    width: 15px;
+                    background-color: #E2D3B7;
+                    border-radius: 50%;
+                }
+
+                a {
+                    color: inherit;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                }
+
+                &:not(:last-child) {
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
 }
