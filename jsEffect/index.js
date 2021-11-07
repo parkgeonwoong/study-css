@@ -8,10 +8,10 @@ for (let i = 1; i < 400; i++) {
 }
 
 const onload = () => {
-  setTimeout("go_url()", 25000);
+  setTimeout("goUrl()", 25000);
 };
 
-const go_url = () => {
+const goUrl = () => {
   location.href = "main.html";
 };
 
