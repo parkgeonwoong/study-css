@@ -12,7 +12,7 @@ const onload = () => {
 };
 
 const goUrl = () => {
-  location.href = "main.html";
+  location.href = "../fontEffect/index.html";
 };
 
 onload();
