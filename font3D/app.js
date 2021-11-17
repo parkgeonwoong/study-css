@@ -3,7 +3,7 @@ const onload = () => {
 };
 
 const goUrl = () => {
-  location.href = "../jsEffect/index.html";
+  location.href = "../loading/index.html";
 };
 
 onload();

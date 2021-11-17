@@ -1,9 +1,9 @@
 const onload = () => {
-  setTimeout("goUrl()", 10000);
+  setTimeout("goUrl()", 15000);
 };
 
 const goUrl = () => {
-  location.href = "../loading/index.html";
+  location.href = "../font3D/index.html";
 };
 
 onload();
