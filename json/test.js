@@ -39,6 +39,7 @@ console.clear();
 
 const text = document.querySelector(".text");
 
+// JSON을 HTML에 보이기
 const loaddata = () => {
   return fetch("https://jsonplaceholder.typicode.com/posts/1")
     .then((response) => response.json())
@@ -48,14 +49,15 @@ const loaddata = () => {
 loaddata().then((item) => {
   console.log(item);
   const json = JSON.stringify(item);
-  text.textContent = json;
+  text.textContent = json; // innerText도 가능
 });
-// .then((ex1Str = JSON.stringify(json)));
 
-fetch("https://jsonplaceholder.typicode.com/posts")
-  .then((response) => response.json())
-  .then((json) => console.log(json));
+// GET 호출
+fetch("https://jsonplaceholder.typicode.com/posts/1").then((res) =>
+  console.log(res.body)
+);
 
+// POST 호출
 fetch("https://jsonplaceholder.typicode.com/posts", {
   method: "POST",
   body: JSON.stringify({
@@ -69,3 +71,5 @@ fetch("https://jsonplaceholder.typicode.com/posts", {
 })
   .then((response) => response.json())
   .then((json) => console.log(json));
+
+fetch("API").then((res) => console.log(res));
