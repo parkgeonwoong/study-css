@@ -1,0 +1,17 @@
+body {
+  position: relative;
+  background-color: black;
+}
+
+h1 {
+  color: #fff;
+}
+
+.cursor_item {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: tomato;
+  top: 0;
+  left: 0;
+}
