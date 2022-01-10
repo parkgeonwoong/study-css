@@ -12,7 +12,6 @@ let speed = 0.006;
 
 // 마우스가 따라가는 움직임
 window.onload = function () {
-  h1 = document.getElementsByTagName("h1")[0];
   human = document.querySelectorAll(".human")[0];
   bg = document.querySelectorAll(".bg")[0];
   pipe = document.querySelectorAll(".pipe")[0];
