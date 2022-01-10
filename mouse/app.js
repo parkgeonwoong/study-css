@@ -1,12 +1,14 @@
 let cursor_item;
+let h1;
 let x = 0;
 let y = 0;
 
 let mouseX = 0;
 let mouseY = 0;
+let speed = 0.03;
 
 window.onload = function () {
-  let h1 = document.getElementsByTagName("h1")[0];
+  h1 = document.getElementsByTagName("h1")[0];
   cursor_item = document.querySelectorAll(".cursor_item")[0];
 
   window.addEventListener("mousemove", handleMouse, false);
@@ -15,7 +17,6 @@ window.onload = function () {
     x = e.clientX;
     y = e.clientY;
 
-    h1.innerHTML = "x: " + x + " y: " + y;
     // console.log(e.clientX, e.clientY);
   }
   loop();
@@ -23,7 +24,12 @@ window.onload = function () {
 
 function loop() {
   // console.log(x, y);
-  mouseX += x - mouseX;
-  cursor_item.style.transform = "translate(" + x + "px," + y + "px)";
+  mouseX += (x - mouseX) * speed;
+  mouseY += (y - mouseY) * speed;
+
+  h1.innerHTML = "x: " + x + " y: " + y + " mouseX:" + mouseX;
+
+  cursor_item.style.transform = "translate(" + mouseX + "px," + mouseY + "px)";
+  // cursor_item.style.transform = "translate(" + x + "px," + y + "px)";
   window.requestAnimationFrame(loop);
 }
