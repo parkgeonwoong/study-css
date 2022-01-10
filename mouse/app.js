@@ -7,6 +7,7 @@ let mouseX = 0;
 let mouseY = 0;
 let speed = 0.03;
 
+// 마우스가 따라가는 움직임
 window.onload = function () {
   h1 = document.getElementsByTagName("h1")[0];
   cursor_item = document.querySelectorAll(".cursor_item")[0];
@@ -33,3 +34,18 @@ function loop() {
   // cursor_item.style.transform = "translate(" + x + "px," + y + "px)";
   window.requestAnimationFrame(loop);
 }
+
+// 마우스 클릭으로 이동
+// window.onload = function () {
+//   h1 = document.getElementsByTagName("h1")[0];
+//   cursor_item = document.querySelectorAll(".cursor_item")[0];
+
+//   window.addEventListener("click", handleMouse, false);
+
+//   function handleMouse(e) {
+//     x = e.clientX;
+//     y = e.clientY;
+
+//     cursor_item.style.transform = "translate(" + x + "px," + y + "px)";
+//   }
+// };
