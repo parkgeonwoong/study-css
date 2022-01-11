@@ -67,11 +67,11 @@ function loop() {
 
 <br>
 
-## 스크롤 값을 활용한 인터렉티브
+## ✅ 스크롤 값을 활용한 인터렉티브
 
 - 패럴랙스는 레이어가 존재해야 한다. (멈춰 있는 레이어, 천천히 움직이는 레이어, 빨리 움직이는 레이어, 시선)
 
-## 참고 사이트
+### 참고 사이트
 
 - https://www.cabletv.com/the-walking-dead
 - https://neal.fun/deep-sea/
