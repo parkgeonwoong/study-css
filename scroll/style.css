@@ -1,0 +1,17 @@
+body {
+  height: 10000px;
+  background: linear-gradient(
+    150deg,
+    tomato,
+    orange,
+    yellow,
+    green,
+    indigo,
+    purple,
+    white
+  );
+}
+
+h1 {
+  color: white;
+}

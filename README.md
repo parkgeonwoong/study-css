@@ -45,12 +45,33 @@ function loop() {
 
 <br>
 
-## ✅ mouseWeb
+### 참고 사이트
+
+- https://www.nytimes.com/paidpost/allbirds/the-view-from-above.html
+
+- https://news.joins.com/DigitalSpecial/230
+
+- https://news.joins.com/DigitalSpecial/306
+
+<br>
+
+### ➡️ mouseWeb
 
 - 위에 기초하여 Web페이지 작성
 
 <br>
 
-## ✅ nytimes
+### ➡️ nytimes
 
 - 뉴욕타임즈의 인터랙티브 웹을 직접 구현
+
+<br>
+
+## 스크롤 값을 활용한 인터렉티브
+
+- 패럴랙스는 레이어가 존재해야 한다. (멈춰 있는 레이어, 천천히 움직이는 레이어, 빨리 움직이는 레이어, 시선)
+
+## 참고 사이트
+
+- https://www.cabletv.com/the-walking-dead
+- https://neal.fun/deep-sea/
