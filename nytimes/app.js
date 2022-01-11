@@ -3,7 +3,7 @@ let y = 0;
 
 let mouseX = 0;
 let mouseY = 0;
-let speed = 0.004;
+let speed = 0.003;
 
 let imgArr;
 let bird;
