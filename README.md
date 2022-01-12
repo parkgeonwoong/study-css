@@ -71,7 +71,36 @@ function loop() {
 
 - 패럴랙스는 레이어가 존재해야 한다. (멈춰 있는 레이어, 천천히 움직이는 레이어, 빨리 움직이는 레이어, 시선)
 
+- 스크롤 값을 받아오는 것 부터 시작
+
+- width, height로 보여주는 백분율
+
+<br>
+
+`Parallax Scrolling` : 사용자가 스크롤할 때 배경 이미지가 느리게 움직이며, 근거리를 빨리 움직이는 즉 입체감을 느낄 수 있는 디자인 기법
+
+- 스크롤을 움직일 때마다 transform의 translate, scale, opacity 등 변화를 직접 준다.
+
+```javascript
+window.addEventListener("scroll", function (e) {
+  scrollTop = document.documentElement.scrollTop;
+
+  h1.style.transform = "translate(0," + -scrollTop / 10 + "px)";
+  coverImg.style.transform = "scale(" + (1 + scrollTop / 1000) + ")";
+  cover.style.opacity = 0.3 + scrollTop / 1000;
+});
+```
+
+<br>
+
 ### 참고 사이트
 
 - https://www.cabletv.com/the-walking-dead
 - https://neal.fun/deep-sea/
+
+<br>
+
+### ➡️ scroll-branch
+
+- 스크롤 페이드인 효과
+- 브런치 스크롤 스타일
