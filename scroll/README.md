@@ -30,3 +30,26 @@ per =
     scrollTop / (document.documentElement.scrollHeight - window.innerHeight)
   ) * 100;
 ```
+
+<br>
+
+### ✅ scrollTop 패럴렉스 구현
+
+```javascript
+window.addEventListener("scroll", function (e) {
+  scrollTop = document.documentElement.scrollTop;
+  let per = Math.ceil(
+    (scrollTop / (document.body.scrollHeight - window.outerHeight)) * 100
+  );
+
+  bar.style.height = per + "%";
+
+  cloudWrap.style.transform = "translate(0," + scrollTop / 1.2 + "px)";
+});
+```
+
+- (윈도우 기준) 스크롤 한 번에 100픽셀씩 이동
+
+- 모두가 100씩 이동할때 지정한 오브젝트만 100 / 1.2 = 83.3 씩 이동을 하게 되어 느리게 움직이는 느낌
+
+- 반대로 100 \* .8 로 해도 비슷한 결과
