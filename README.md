@@ -117,6 +117,17 @@ window.addEventListener("scroll", function (e) {
 
 ## ✅ 인터랙티브 교차 페이징
 
+- 사진 여러개를 position fixed로 겹쳐서 JS에 의해 사진이 달라지는 교차페이지
+
+```javascript
+//선택된 컨텐츠랩 활성
+contentWrap[pageNum].classList.add("active");
+for (var i = 0; i < 4; i++) {
+  //활성된 컨텐츠랩 내부 이미지들 활성
+  contentWrap[pageNum].getElementsByTagName("img")[i].classList.add("active");
+}
+```
+
 <br>
 
 ## ✅ translateZ 활용한 입체적인 페이지
