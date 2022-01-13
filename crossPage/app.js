@@ -8,7 +8,26 @@ const imgArr = document.querySelectorAll("img");
 
 totalNum = contentWrap.length;
 
-alert(imgArr.length);
+const pageSet = () => {
+  // 전체 리셋
+  for (let i = 0; i < contentWrap.length; i++) {
+    contentWrap[i].classList.remove("active");
+  }
+
+  // 내부 이미지 리셋
+  for (let i = 0; i < imgArr.length; i++) {
+    imgArr[i].classList.remove("active");
+  }
+
+  // 선택 컨텐츠랩 활성
+  contentWrap[pageNum].classList.add("active");
+
+  for (let i = 0; i < 4; i++) {
+    contentWrap[pageNum].getElementsByTagName("img")[i].classList.add("active");
+  }
+
+  title[0].innerText = `PAGE : ${pageNum + 1}`;
+};
 
 const handlePrev = () => {
   if (pageNum > 0) {
@@ -28,10 +47,6 @@ const handleNext = () => {
   }
   console.log(pageNum);
   pageSet();
-};
-
-const pageSet = () => {
-  title[0].innerText = `PAGE : ${pageNum + 1}`;
 };
 
 pageSet();

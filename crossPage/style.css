@@ -26,7 +26,7 @@ body main {
 .contentWrap img {
   width: 200px;
   transition: all 0.8s cubic-bezier(0.86, 0.005, 0.31, 0.995);
-  /* opacity: 0; */
+  opacity: 0;
 }
 
 .contentWrap img.img0 {
@@ -55,10 +55,27 @@ body main {
 
 .textWrap {
   position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  background: #000;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 .textWrap h1 {
   color: #fff;
+  transform: translate(0, -200%);
+  transition: all 3s ease-out;
+}
+
+.textWrap h1.active {
+  transform: translate(0, 0);
+  animation: fadeIn 2s ease-in-out;
 }
 
 .buttonWrap {
@@ -75,4 +92,14 @@ body main {
   font-size: 20px;
   font-weight: bold;
   border-radius: 10px;
+  /* animation: fadeIn 2s ease-in-out; */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
