@@ -6,6 +6,12 @@
 
 <br>
 
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/65653053/149335007-489dafe3-2b39-4e9f-b8ad-caf7169e151a.gif)
+
+
+<br>
+
+
 ## ✅ mouse
 
 - 마우스의 x, y 좌표를 JS로 직접 찍어보면서 기본 개념 다루기
