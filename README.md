@@ -97,6 +97,7 @@ window.addEventListener("scroll", function (e) {
 
 - https://www.cabletv.com/the-walking-dead
 - https://neal.fun/deep-sea/
+- http://www.firewatchgame.com/
 
 <br>
 
