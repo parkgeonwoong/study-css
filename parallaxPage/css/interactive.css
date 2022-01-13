@@ -1,6 +1,6 @@
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -25,9 +25,9 @@ main .progress .progressBar {
   background: #ffa600;
   height: 2px;
   z-index: 10001;
-  -webkit-transition: width .1s ease;
-  -o-transition: width .1s ease;
-  transition: width .1s ease;
+  -webkit-transition: width 0.1s ease;
+  -o-transition: width 0.1s ease;
+  transition: width 0.1s ease;
 }
 
 section {
@@ -36,7 +36,13 @@ section {
 }
 
 section.mainPage {
-  background: -webkit-gradient(linear, left top, left bottom, from(#4b0220), to(#691c46));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#4b0220),
+    to(#691c46)
+  );
   background: -o-linear-gradient(#4b0220, #691c46);
   background: linear-gradient(#4b0220, #691c46);
   padding-bottom: 50px;
@@ -92,7 +98,13 @@ section.mainPage .imageWrap .parallax_image:nth-child(6) {
 }
 
 section.subPage {
-  background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#691c46));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#000),
+    to(#691c46)
+  );
   background: -o-linear-gradient(#000, #691c46);
   background: linear-gradient(#000, #691c46);
 }

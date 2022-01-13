@@ -104,3 +104,18 @@ window.addEventListener("scroll", function (e) {
 
 - 스크롤 페이드인 효과
 - 브런치 스크롤 스타일
+
+<br>
+
+### ➡️ parallax Page
+
+- 입체감을 준 페럴랙스 페이지 구현
+- 지금 까지 사용한 마우스의 움직임에 따라 사물의 변화, 스크롤 패럴렉스 사용
+
+<br>
+
+## ✅ 인터랙티브 교차 페이징
+
+<br>
+
+## ✅ translateZ 활용한 입체적인 페이지
