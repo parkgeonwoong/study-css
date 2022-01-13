@@ -1,0 +1,179 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  height: 1000vh;
+  background: linear-gradient(#a1ba94, #c6ce9e);
+}
+
+main {
+  position: relative;
+}
+
+main .progress {
+  position: fixed;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  z-index: 10000;
+}
+
+main .progress .progressBar {
+  position: fixed;
+  width: 0%;
+  background: #ffa600;
+  height: 2px;
+  z-index: 10001;
+  -webkit-transition: width 0.1s ease;
+  -o-transition: width 0.1s ease;
+  transition: width 0.1s ease;
+}
+
+section {
+  position: relative;
+  width: 100%;
+}
+
+section.mainPage {
+  padding-bottom: 50px;
+}
+
+section.mainPage h1.title {
+  position: absolute;
+  top: 120px;
+  text-align: center;
+  color: #ffffde;
+  font-size: 5rem;
+  padding-top: 20vh;
+  width: 400px;
+  left: calc(50% - 200px);
+  z-index: 1000;
+}
+
+section.mainPage .imageWrap {
+  height: 1000px;
+  /* overflow-y: hidden; */
+}
+
+section.mainPage .imageWrap .parallax_image {
+  position: fixed;
+  width: 100%;
+  height: inherit;
+  background-position: center;
+  background-size: auto 100%;
+  /* background-size: 100%; */
+  background-repeat: no-repeat;
+  perspective: 300px;
+}
+
+section.mainPage .imageWrap .parallax_image:nth-child(1) {
+  background-image: url(../image/13-ceu.png);
+  background-size: 100%;
+}
+
+section.mainPage .imageWrap .parallax_image:nth-child(2) {
+  background-image: url(../image/9-montes.png);
+  background-size: 100%;
+  background-position: center bottom 310px;
+}
+
+section.mainPage .imageWrap .parallax_image:nth-child(3) {
+  background-image: url(../image/12-sol.png);
+  background-size: 8%;
+  background-position: bottom 260px right 820px;
+}
+
+section.mainPage .imageWrap .parallax_image:nth-child(4) {
+  background-image: url(../image/10-montes.png);
+  background-size: 100%;
+  background-position: center bottom 295px;
+}
+
+section.mainPage .imageWrap .parallax_image:nth-child(5) {
+  background-image: url(../image/8-montes.png);
+  background-size: 100%;
+  background-position: center bottom 280px;
+}
+
+section.mainPage .imageWrap .parallax_image:nth-child(6) {
+  background-image: url(../image/7-montes.png);
+  background-size: 100%;
+  background-position: center bottom 290px;
+}
+section.mainPage .imageWrap .parallax_image:nth-child(7) {
+  background-image: url(../image/6-arvores.png);
+  background-size: 50%;
+  background-position: center bottom 260px;
+  opacity: 0.8;
+}
+section.mainPage .imageWrap .parallax_image:nth-child(8) {
+  background-image: url(../image/4-lago.png);
+  background-size: 70%;
+  background-position: center bottom 50px;
+}
+section.mainPage .imageWrap .parallax_image:nth-child(9) {
+  background-image: url(../image/3-pedra.png);
+  background-size: 5%;
+  background-position: right 810px bottom 250px;
+  /* width: 139px;
+  height: 140px; */
+}
+
+section.mainPage .imageWrap .parallax_image:nth-child(10) {
+  background-image: url(../image/2-arvore-dir.png);
+  /* background-size: auto; */
+  background-position: top right;
+}
+
+section.mainPage .imageWrap .parallax_image:nth-child(11) {
+  background-image: url(../image/1-arvore-esq.png);
+  background-size: 90%;
+  background-position: left;
+}
+
+section.subPage {
+  min-height: 100vh;
+  /* background: linear-gradient(#372d3b, #691c46); */
+}
+
+section.subPage .innerWrap {
+  position: relative;
+}
+
+@media only screen and (max-width: 768px) {
+  section.subPage .innerWrap {
+    width: 100%;
+  }
+}
+
+section.subPage .innerWrap .contWrap {
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px 40px;
+  width: 700px;
+}
+
+section.subPage .innerWrap .contWrap p {
+  font-size: 16px;
+  line-height: 30px;
+  color: #fff;
+  margin: 20px 20px;
+  padding: 100px;
+}
+
+/* section.subPage.lastPage {
+  margin-top: 200px;
+}
+
+section.subPage.lastPage .innerWrap {
+  width: 100%;
+  padding: 50px 0;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+section.subPage.lastPage .innerWrap .contWrap {
+  background-color: rgba(0, 0, 0, 0);
+} */
