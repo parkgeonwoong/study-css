@@ -11,6 +11,8 @@ let parallax_3;
 let parallax_4;
 let parallax_5;
 let parallax_6;
+let parallax_7;
+let parallax_8;
 let progressBar;
 
 window.onload = function () {
@@ -23,6 +25,8 @@ window.onload = function () {
   parallax_4 = document.getElementById("parallax_4");
   parallax_5 = document.getElementById("parallax_5");
   parallax_6 = document.getElementById("parallax_6");
+  parallax_7 = document.getElementById("parallax_7");
+  parallax_8 = document.getElementById("parallax_8");
 
   window.addEventListener("resize", stageResize, false);
   window.addEventListener("mousemove", mouseMove, false);
@@ -50,6 +54,8 @@ function scrollFunc(e) {
     "translate3d(0px," + -scrollTop * 0.22 + "px, 0px)";
   parallax_5.style.transform =
     "translate3d(0px," + -scrollTop * 0.25 + "px, 0px)";
+  parallax_6.style.transform =
+    "translate3d(0px," + -scrollTop * 0.28 + "px, 0px)";
 }
 
 function stageResize() {
@@ -61,11 +67,13 @@ function loop() {
   mx += (x - mx) * speed;
   my += (y - my) * speed;
 
-  parallax_4.style.transform =
-    "translate3d(" + mx / 140 + "px," + -scrollTop * 0.22 + "px, 0px)";
   parallax_5.style.transform =
-    "scale(1.1) translate(" + mx / 50 + "px," + -scrollTop * 0.25 + "px)";
+    "translate3d(" + -mx / 160 + "px," + -scrollTop * 0.18 + "px, 0px)";
   parallax_6.style.transform =
+    "translate3d(" + mx / 140 + "px," + -scrollTop * 0.22 + "px, 0px)";
+  parallax_7.style.transform =
+    "scale(1.1) translate(" + mx / 50 + "px," + -scrollTop * 0.25 + "px)";
+  parallax_8.style.transform =
     "scale(1.2) translate(" + -mx / 20 + "px," + -my / 20 + "px)";
 
   window.requestAnimationFrame(loop);

@@ -40,11 +40,11 @@ section.mainPage {
     linear,
     left top,
     left bottom,
-    from(#4b0220),
-    to(#691c46)
+    from(#ffaf1b),
+    to(#210002)
   );
-  background: -o-linear-gradient(#4b0220, #691c46);
-  background: linear-gradient(#4b0220, #691c46);
+  background: -o-linear-gradient(#ffaf1b, #210002);
+  background: linear-gradient(#ffaf1b, #210002);
   padding-bottom: 50px;
 }
 
@@ -73,27 +73,33 @@ section.mainPage .imageWrap .parallax_image {
 }
 
 section.mainPage .imageWrap .parallax_image:nth-child(1) {
-  background-image: url(../image/main_0.png);
+  background-image: url(../image/parallax0.png);
 }
 
 section.mainPage .imageWrap .parallax_image:nth-child(2) {
-  background-image: url(../image/main_1.png);
+  background-image: url(../image/parallax1.png);
 }
 
 section.mainPage .imageWrap .parallax_image:nth-child(3) {
-  background-image: url(../image/main_2.png);
+  background-image: url(../image/parallax2.png);
 }
 
 section.mainPage .imageWrap .parallax_image:nth-child(4) {
-  background-image: url(../image/main_3.png);
+  background-image: url(../image/parallax3.png);
 }
 
 section.mainPage .imageWrap .parallax_image:nth-child(5) {
-  background-image: url(../image/main_4.png);
+  background-image: url(../image/parallax4.png);
+}
+section.mainPage .imageWrap .parallax_image:nth-child(6) {
+  background-image: url(../image/parallax5.png);
+}
+section.mainPage .imageWrap .parallax_image:nth-child(7) {
+  background-image: url(../image/parallax6.png);
 }
 
-section.mainPage .imageWrap .parallax_image:nth-child(6) {
-  background-image: url(../image/main_5.png);
+section.mainPage .imageWrap .parallax_image:nth-child(8) {
+  background-image: url(../image/parallax7.png);
   background-size: cover;
 }
 
@@ -102,20 +108,20 @@ section.subPage {
     linear,
     left top,
     left bottom,
-    from(#000),
+    from(#210002),
     to(#691c46)
   );
-  background: -o-linear-gradient(#000, #691c46);
-  background: linear-gradient(#000, #691c46);
+  background: -o-linear-gradient(#210002, #691c46);
+  background: linear-gradient(#210002, #691c46);
 }
 
-section.subPage #parallax_6 {
+section.subPage #parallax_8 {
   position: relative;
-  background: url(../image/main_6.png) bottom center no-repeat;
-  background-size: auto 1100px;
-  height: 400px;
+  background: url(../image/parallax8.png) bottom center no-repeat;
+  background-size: auto 900px;
+  height: 450px;
   width: 100%;
-  top: -400px;
+  top: -450px;
 }
 
 section.subPage .innerWrap {
