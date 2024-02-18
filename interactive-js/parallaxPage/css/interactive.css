@@ -1,0 +1,139 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+main {
+  position: relative;
+}
+
+main .progress {
+  position: fixed;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  z-index: 10000;
+}
+
+main .progress .progressBar {
+  position: fixed;
+  width: 0%;
+  background: #ffa600;
+  height: 2px;
+  z-index: 10001;
+  -webkit-transition: width 0.1s ease;
+  -o-transition: width 0.1s ease;
+  transition: width 0.1s ease;
+}
+
+section {
+  position: relative;
+  width: 100%;
+}
+
+section.mainPage {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#ffaf1b),
+    to(#210002)
+  );
+  background: -o-linear-gradient(#ffaf1b, #210002);
+  background: linear-gradient(#ffaf1b, #210002);
+  padding-bottom: 50px;
+}
+
+section.mainPage h1.title {
+  position: fixed;
+  text-align: center;
+  color: #fff;
+  font-size: 2.7rem;
+  padding-top: 20vh;
+  width: 400px;
+  left: calc(50% - 200px);
+}
+
+section.mainPage .imageWrap {
+  height: 1100px;
+  overflow-y: hidden;
+}
+
+section.mainPage .imageWrap .parallax_image {
+  position: fixed;
+  width: 100%;
+  height: inherit;
+  background-position: top center;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+
+section.mainPage .imageWrap .parallax_image:nth-child(1) {
+  background-image: url(../image/parallax0.png);
+}
+
+section.mainPage .imageWrap .parallax_image:nth-child(2) {
+  background-image: url(../image/parallax1.png);
+}
+
+section.mainPage .imageWrap .parallax_image:nth-child(3) {
+  background-image: url(../image/parallax2.png);
+}
+
+section.mainPage .imageWrap .parallax_image:nth-child(4) {
+  background-image: url(../image/parallax3.png);
+}
+
+section.mainPage .imageWrap .parallax_image:nth-child(5) {
+  background-image: url(../image/parallax4.png);
+}
+section.mainPage .imageWrap .parallax_image:nth-child(6) {
+  background-image: url(../image/parallax5.png);
+}
+section.mainPage .imageWrap .parallax_image:nth-child(7) {
+  background-image: url(../image/parallax6.png);
+}
+
+section.mainPage .imageWrap .parallax_image:nth-child(8) {
+  background-image: url(../image/parallax7.png);
+  background-size: cover;
+}
+
+section.subPage {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#210002),
+    to(#691c46)
+  );
+  background: -o-linear-gradient(#210002, #691c46);
+  background: linear-gradient(#210002, #691c46);
+}
+
+section.subPage #parallax_8 {
+  position: relative;
+  background: url(../image/parallax8.png) bottom center no-repeat;
+  background-size: auto 900px;
+  height: 450px;
+  width: 100%;
+  top: -450px;
+}
+
+section.subPage .innerWrap {
+  position: relative;
+  margin: 0 auto;
+  padding: 500px 0;
+  width: 900px;
+  height: 4500px;
+}
+
+@media only screen and (max-width: 768px) {
+  section.subPage .innerWrap {
+    width: 100%;
+  }
+}

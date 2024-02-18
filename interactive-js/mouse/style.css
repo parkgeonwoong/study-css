@@ -1,0 +1,19 @@
+body {
+  position: relative;
+  background-color: black;
+}
+
+h1 {
+  color: #fff;
+}
+
+.cursor_item {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: tomato;
+  top: 0;
+  left: 0;
+  margin: -50px 0 0 -50px;
+  /* transition: all 1s cubic-bezier(0.815, 0.02, 0.3, 1.005); */
+}
