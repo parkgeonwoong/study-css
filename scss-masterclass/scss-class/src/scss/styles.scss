@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=B612+Mono&family=DM+Serif+Display:ital@0;1&display=swap");
+@import "_variables";
+@import "_elements";
+@import "_mixins.scss";
+// @import "_buttons.scss";
+
+// Nesting
+/*
+h2 {
+  color: $bg;
+  font-size: 30px;
+}
+
+.box {
+  margin-top: 20px;
+
+  &:hover {
+    background-color: coral;
+  }
+
+  h2 {
+    color: skyblue;
+
+    &:hover {
+      color: palevioletred;
+    }
+  }
+
+  button {
+    color: mediumslateblue;
+  }
+}
+*/
+
+// Mixin
+/* 
+a {
+  margin-bottom: 15px;
+
+  &:nth-child(odd) {
+    @include link("odd");
+  }
+
+  &:nth-child(even) {
+    @include link("even");
+  }
+}
+*/
+
+
+h1 {
+  color: tomato;
+
+  @include responsive("iphone") {
+    color: yellow;
+  }
+
+  @include responsive("iphone-l") {
+    font-size: 70px;
+  }
+
+  @include responsive("tablet") {
+    color: green;
+  }
+}
+
+// extends
+/*
+a {
+  @extend %button;
+  text-decoration: none;
+}
+
+button {
+  @extend %button;
+  border: none;
+}
+
+*/

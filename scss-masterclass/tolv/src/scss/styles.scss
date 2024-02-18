@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yrsa:wght@400;500;600&display=swap');
+@import "_variables";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', 'Yrsa', serif, sans-serif;
+    margin-top: 50px;
+}
+
+header {
+    // z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    width: 100%;
+    padding: 0px 7%;
+
+    h1 {
+        place-self: center center;
+        font-family: 'Yrsa';
+    }
+
+    >span {
+        justify-self: end;
+    }
+
+    nav {
+        cursor: pointer;
+
+        ul {
+            display: flex;
+            font-family: 'Montserrat';
+            font-weight: 500;
+
+            li {
+                padding: 0 20px;
+                font-size: 20px;
+            }
+
+            li:not(:last-child) {
+                margin-right: 10px;
+            }
+        }
+    }
+
+    .logo {
+        font-size: 48px;
+        font-family: 'Montserrat';
+        font-weight: 600;
+        display: flex;
+
+        div {
+            transform: rotateZ(10deg);
+            // margin: 0px -3px;
+        }
+    }
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: calc(100vh - 60px);
+
+    .hero__img {
+        background-image: url("https://tolv.dk/wp-content/uploads/2020/11/home_kitsune-2-1040x1300.jpg");
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .hero__text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        h2 {
+            font-size: 42px;
+            text-align: center;
+            width: 60%;
+            font-weight: 500;
+            margin-bottom: 40px;
+            font-family: 'Yrsa';
+        }
+
+        span {
+            font-size: 12px;
+        }
+    }
+}
+
+a {
+    font-weight: 600;
+    color: $ac;
+}
+
+.banner {
+    background-color: $bg;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h3 {
+        font-family: 'Yrsa';
+        font-size: 50px;
+        margin-bottom: 30px;
+        font-weight: 600;
+    }
+
+    p {
+        width: 50%;
+        text-align: center;
+        font-family: 'Yrsa';
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+
+    span {
+        font-size: 12px;
+    }
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 50vh;
+
+    .gallery__item {
+        background-size: cover;
+        background-position: center;
+        background-image: url("https://tolv.dk/wp-content/uploads/2019/07/Cherry-Sofa-Lookbook-3-web@2x.jpg");
+        transition: all 0.4s linear;
+        cursor: pointer;
+        overflow: hidden;
+
+        &:first-child {
+            grid-column-start: span 2;
+            background-image: url("https://tolv.dk/wp-content/uploads/2019/07/Cherry-Sofa-Lookbook-3-web@2x.jpg");
+        }
+
+        &:nth-child(2) {
+            background-image: url("https://tolv.dk/wp-content/uploads/2019/07/Figura-chair-blackoak_2-web@2x.jpg");
+        }
+
+        &:nth-child(3) {
+            background-image: url("https://tolv.dk/wp-content/uploads/2019/07/Inlay-Chair-Lookbook-61-web@2x.jpg");
+        }
+
+        &:nth-child(5) {
+            grid-column-start: span 2;
+            background-image: url("https://tolv.dk/wp-content/uploads/2019/07/Copal-3_MLF_1-web@2xv2.jpg");
+        }
+
+        &:nth-child(7) {
+            grid-column-start: span 2;
+            background-image: url("https://tolv.dk/wp-content/uploads/2019/07/Kile-Coffeetable-Lookbook-75-web@2x.jpg");
+        }
+
+        // 흐릿해 지는 효과 부여 filter: blur()
+        &:hover {
+            filter: blur(10px);
+        }
+    }
+}
+
+footer {
+    background-color: #535851;
+    width: 100%;
+    height: 50vh;
+
+    .footer__top {
+        width: 100%;
+        color: white;
+        padding: 25px;
+        margin-left: 70px;
+        
+        ul {
+            margin-top: 50px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        li {
+            opacity: 0.5;
+            font-size: 12px;
+        }
+    }
+
+    .footer__content {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding: 25px;
+        margin-left: 70px;
+
+        .menu {
+            li {
+                cursor: pointer;
+                color: white;
+                font-size: 12px;
+                padding: 8px 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,275 @@
+/*
+.father {
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+    grid-template-rows: 100px 50px 300px;
+    /* 
+    column-gap: 10px;
+    row-gap: 10px; 
+    
+    gap: 10px;
+}
+
+.child {
+    flex-basis: 30%;
+    background: peru;
+    color: white;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+------------------------------------------------------
+*/
+
+/* Grid Areas
+.grid {
+    display: grid;
+    grid-template-columns: auto 200px;
+    /* auto= 모든 공간을 사용한다. 
+    grid-template-rows: 100px repeat(2, 200px) 100px;
+    grid-template-areas:
+        "header header header header"
+        "content content content nav"
+        "content content content nav"
+        "footer footer footer footer"
+    ;
+}
+
+.header {
+    background-color: #2ecc71;
+    grid-area: header;
+}
+
+.content {
+    background-color: skyblue;
+    grid-area: content;
+}
+
+.nav {
+    background-color: purple;
+    grid-area: nav;
+}
+
+.footer {
+    background-color: rgb(230, 129, 92);
+    grid-area: footer;
+}
+------------------------------------------------------
+*/
+
+/* ShortCut 
+.grid {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 100px);
+}
+
+.header {
+    background-color: #2ecc71;
+     
+    grid-column-start: 1;
+    grid-column-end: 5; 
+    
+    grid-column: 1 / -1;
+}
+
+.content {
+    background-color: skyblue;
+    grid-column: 1 / -2;
+    grid-row: 2 / span 2;
+}
+
+.nav {
+    background-color: purple;
+    grid-row: 2 / 4;
+}
+
+.footer {
+    background-color: rgb(230, 129, 92);
+    grid-column: span 4;
+}
+------------------------------------------------------
+*/
+
+/*  Grid Template == fr
+.grid {
+    display: grid;
+    gap: 10px;
+    height: 50vh;
+    grid-template:
+        "header header header header"1fr
+         1. row  2. 높이를 적었다. 
+        "content content content nav"2fr 
+        "footer footer footer footer"1fr / 1fr 1fr 1fr 1fr;
+}
+
+.header {
+    background-color: #2ecc71;
+    grid-area: header;
+}
+
+.content {
+    background-color: skyblue;
+    grid-area: content;
+}
+
+.nav {
+    background-color: purple;
+    grid-area: nav;
+}
+
+.footer {
+    background-color: rgb(230, 129, 92);
+    grid-area: footer;
+}
+------------------------------------------------------
+*/
+
+/* 
+.grid {
+    display: grid;
+    gap: 10px;
+    height: 50vh;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    place-items: stretch center;
+    /* 
+    justify-content: center;
+    align-items: center;
+    기본적으로 stretch형태로 모두 옆으로 위로 늘어난다. 
+    justify-items, align-items로 바꿀 수 있다.
+    
+}
+
+.header {
+    background-color: #2ecc71;
+}
+
+.content {
+    background-color: skyblue;
+}
+
+.nav {
+    background-color: purple;
+}
+
+.footer {
+    background-color: rgb(230, 129, 92);
+}
+------------------------------------------------------
+*/
+
+/* Place Content
+.grid {
+    background-color: gray;
+    display: grid;
+    gap: 10px;
+    height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 100px);
+    /* justify-content: center;
+    align-content: space-between; 
+    place-content: end center;
+
+}
+
+.header {
+    background-color: #2ecc71;
+    /* align-self: end;
+    justify-self: center;
+    place-self: start end;
+}
+
+.content {
+    background-color: skyblue;
+}
+
+.nav {
+    background-color: purple;
+}
+
+.footer {
+    background-color: rgb(230, 129, 92);
+}
+------------------------------------------------------
+*/
+
+/* Auto grid
+column, row가 넘쳐나서 그리드 범주를 벗어나면 일일이 하는것은 나쁜 판단
+
+- minmax : 얼마나 작게 혹은 크게 element가 될 수 있는가 
+
+.grid {
+    background-color: gray;
+    color: white;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(4, 100px);
+    /* grid-auto-rows: 100px; */
+/* grid-auto-flow: column; 
+    grid-auto-columns: 100px;
+}
+
+.item:nth-child(even) {
+    background-color: lightpink;
+}
+
+.item:nth-child(odd) {
+    background-color: skyblue;
+}
+------------------------------------------------------
+*/
+
+/* Auto Fit&Fill
+.grid {
+    background-color: gray;
+    color: white;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 100px);
+    grid-auto-columns: 100px;
+    grid-auto-rows: 100px;
+
+}
+
+.item:nth-child(even) {
+    background-color: lightpink;
+}
+
+.item:nth-child(odd) {
+    background-color: skyblue;
+}
+
+.grid:first-child {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
+
+.grid:last-child {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+
+} 
+*/
+
+
+/* Mincontent&Maxcontent */
+.grid {
+    background-color: gray;
+    color: white;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: max-content min-content;
+    grid-auto-rows: 100px;
+    margin-bottom: 30px;
+}
+
+.item:nth-child(even) {
+    background-color: lightpink;
+}
+
+.item:nth-child(odd) {
+    background-color: skyblue;
+}
